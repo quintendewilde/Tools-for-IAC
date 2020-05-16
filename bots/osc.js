@@ -3,13 +3,13 @@ var osc = require("osc");
 
 var udpPort = new osc.UDPPort({
     // This is the port we're listening on.
-    localAddress: "192.168.1.23",
-    localPort: 4560,
+    localAddress: "127.0.0.1",
+    localPort: 4600,
 
     // This is where sclang is listening for OSC messages.
-    remoteAddress: "192.168.1.23",
+    remoteAddress: "192.168.1.8",
     remotePort: 4560,
-    metadata: true
+   
 });
 
 
